@@ -21,7 +21,7 @@ struct ContentView: View {
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack(spacing: 8) {
                         ForEach(0..<diaryEvents.count) { index in
-                            DiaryItemView(item: self.diaryEvents[index], index: index)
+                            DiaryItem(item: self.diaryEvents[index], index: index)
                         }
                         .padding(EdgeInsets(top: 10, leading: 0, bottom: 10, trailing: 0))
                     }
@@ -31,9 +31,7 @@ struct ContentView: View {
                 
                 Spacer()
                 
-                VStack {
-                    Text(diaryEvents[selectedView.index].date!)
-                }
+                DiaryElement(event: diaryEvents[selectedView.index])
                 
                 Spacer()
             }

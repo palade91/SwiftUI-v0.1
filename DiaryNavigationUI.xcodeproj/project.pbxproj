@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AD0D6BED242CB57F003A787D /* NavigationConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0D6BEC242CB57F003A787D /* NavigationConfigurator.swift */; };
-		AD0D6BF0242CBB0A003A787D /* DiaryItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0D6BEF242CBB0A003A787D /* DiaryItemView.swift */; };
+		AD0D6BF0242CBB0A003A787D /* DiaryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0D6BEF242CBB0A003A787D /* DiaryItem.swift */; };
 		ADA7D654242CA7E700F3A506 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA7D653242CA7E700F3A506 /* AppDelegate.swift */; };
 		ADA7D656242CA7E700F3A506 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA7D655242CA7E700F3A506 /* SceneDelegate.swift */; };
 		ADA7D658242CA7E700F3A506 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA7D657242CA7E700F3A506 /* ContentView.swift */; };
@@ -18,11 +18,12 @@
 		ADA7D668242CA90000F3A506 /* DevelopmentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA7D667242CA90000F3A506 /* DevelopmentData.swift */; };
 		ADA7D66A242CA93300F3A506 /* DiaryEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA7D669242CA93300F3A506 /* DiaryEvent.swift */; };
 		ADCE330C242CE03100321C28 /* SelectedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCE330B242CE03100321C28 /* SelectedView.swift */; };
+		ADCE330E242CE60500321C28 /* DiaryElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCE330D242CE60500321C28 /* DiaryElement.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AD0D6BEC242CB57F003A787D /* NavigationConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationConfigurator.swift; sourceTree = "<group>"; };
-		AD0D6BEF242CBB0A003A787D /* DiaryItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryItemView.swift; sourceTree = "<group>"; };
+		AD0D6BEF242CBB0A003A787D /* DiaryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryItem.swift; sourceTree = "<group>"; };
 		ADA7D650242CA7E700F3A506 /* DiaryNavigationUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiaryNavigationUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADA7D653242CA7E700F3A506 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADA7D655242CA7E700F3A506 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -34,6 +35,7 @@
 		ADA7D667242CA90000F3A506 /* DevelopmentData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevelopmentData.swift; sourceTree = "<group>"; };
 		ADA7D669242CA93300F3A506 /* DiaryEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiaryEvent.swift; sourceTree = "<group>"; };
 		ADCE330B242CE03100321C28 /* SelectedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedView.swift; sourceTree = "<group>"; };
+		ADCE330D242CE60500321C28 /* DiaryElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryElement.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,7 +127,8 @@
 			isa = PBXGroup;
 			children = (
 				ADA7D657242CA7E700F3A506 /* ContentView.swift */,
-				AD0D6BEF242CBB0A003A787D /* DiaryItemView.swift */,
+				AD0D6BEF242CBB0A003A787D /* DiaryItem.swift */,
+				ADCE330D242CE60500321C28 /* DiaryElement.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -201,11 +204,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD0D6BF0242CBB0A003A787D /* DiaryItemView.swift in Sources */,
+				AD0D6BF0242CBB0A003A787D /* DiaryItem.swift in Sources */,
 				ADCE330C242CE03100321C28 /* SelectedView.swift in Sources */,
 				ADA7D654242CA7E700F3A506 /* AppDelegate.swift in Sources */,
 				ADA7D66A242CA93300F3A506 /* DiaryEvent.swift in Sources */,
 				ADA7D668242CA90000F3A506 /* DevelopmentData.swift in Sources */,
+				ADCE330E242CE60500321C28 /* DiaryElement.swift in Sources */,
 				ADA7D656242CA7E700F3A506 /* SceneDelegate.swift in Sources */,
 				AD0D6BED242CB57F003A787D /* NavigationConfigurator.swift in Sources */,
 				ADA7D658242CA7E700F3A506 /* ContentView.swift in Sources */,

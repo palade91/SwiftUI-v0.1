@@ -1,5 +1,5 @@
 //
-//  DiaryItemView.swift
+//  DiaryItem.swift
 //  DiaryNavigationUI
 //
 //  Created by Catalin Palade on 26/03/2020.
@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct DiaryItemView: View {
+struct DiaryItem: View {
     
     @EnvironmentObject var selectedView: SelectedView
     
@@ -48,7 +48,7 @@ struct DiaryItemView: View {
             .background(Color.red)
             .foregroundColor(Color.white)
             .cornerRadius(6)
-            .shadow(color: .black, radius: 2, x: 0, y: 0)
+            .shadow(color: Color.black.opacity(0.3), radius: 2, x: 0, y: 0)
     }
 }
 
@@ -56,6 +56,6 @@ struct DiaryItemView_Previews: PreviewProvider {
     static let selectedView = SelectedView()
     
     static var previews: some View {
-        DiaryItemView(item: DiaryEvent.example, index: selectedView.index)
+        DiaryItem(item: DiaryEvent.example, index: selectedView.index)
     }
 }
