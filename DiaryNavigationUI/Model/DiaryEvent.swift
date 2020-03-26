@@ -10,7 +10,7 @@ import Foundation
 
 struct DiaryEvent: Codable {
     
-    let ID:                     String
+    let id:                     String
     let jobNumber:              String
     let client:                 String
     let address:                String
@@ -60,7 +60,7 @@ struct DiaryEvent: Codable {
     
     private enum CodingKeys: String, CodingKey {
         
-        case ID =                   "ID"
+        case id =                   "ID"
         case jobNumber =            "jobnumber"
         case client =               "client"
         case address =              "address"

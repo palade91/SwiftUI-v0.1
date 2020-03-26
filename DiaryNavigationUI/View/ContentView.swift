@@ -13,7 +13,32 @@ struct ContentView: View {
     let diaryEvents = Datum.diaryEvents
     
     var body: some View {
-        Text(diaryEvents[0].formatedDate!)
+        
+        NavigationView {
+            VStack {
+                ScrollView(.horizontal) {
+                    HStack(spacing: 5) {
+                        ForEach(diaryEvents, id: \.id) { event in
+                            Text(event.formatedDate!)
+                        }
+                    }.padding(10)
+                }
+                .frame(height: 130)
+                .background(Color.green)
+                
+                
+                
+                Spacer()
+            }
+            .navigationBarTitle(Text("Diary"), displayMode: .inline)
+            .background(NavigationConfigurator { nc in
+                nc.navigationBar.barTintColor = .red
+                nc.navigationBar.titleTextAttributes = [.foregroundColor : UIColor.white]
+            })
+        }
+        .navigationViewStyle(StackNavigationViewStyle())
+        
+        
     }
 }
 

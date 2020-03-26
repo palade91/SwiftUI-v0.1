@@ -10,7 +10,7 @@ import UIKit
 
 struct Datum {
     static let diaryEvents: [DiaryEvent] = [
-        DiaryEvent(ID: UUID().uuidString,
+        DiaryEvent(id: UUID().uuidString,
                    jobNumber: "AA001",
                    client: "Client001",
                    address: "1 Adelaide Street, Rossendale, BB48PW",
@@ -30,7 +30,7 @@ struct Datum {
                    engineerInstructions: nil,
                    jobPack: nil),
         
-        DiaryEvent(ID: UUID().uuidString,
+        DiaryEvent(id: UUID().uuidString,
                    jobNumber: "AA002",
                    client: "Client002",
                    address: "2 Adelaide Street, Rossendale, BB48PW",
@@ -50,7 +50,7 @@ struct Datum {
                    engineerInstructions: nil,
                    jobPack: nil),
         
-        DiaryEvent(ID: UUID().uuidString,
+        DiaryEvent(id: UUID().uuidString,
                    jobNumber: "AA003",
                    client: "Client003",
                    address: "3 Adelaide Street, Rossendale, BB48PW",
@@ -70,7 +70,7 @@ struct Datum {
                    engineerInstructions: nil,
                    jobPack: nil),
         
-        DiaryEvent(ID: UUID().uuidString,
+        DiaryEvent(id: UUID().uuidString,
                    jobNumber: "AA004",
                    client: "Client004",
                    address: "4 Adelaide Street, Rossendale, BB48PW",
@@ -90,7 +90,7 @@ struct Datum {
                    engineerInstructions: nil,
                    jobPack: nil),
         
-        DiaryEvent(ID: UUID().uuidString,
+        DiaryEvent(id: UUID().uuidString,
                    jobNumber: "AA005",
                    client: "Client005",
                    address: "5 Adelaide Street, Rossendale, BB48PW",
@@ -110,7 +110,7 @@ struct Datum {
                    engineerInstructions: nil,
                    jobPack: nil),
         
-        DiaryEvent(ID: UUID().uuidString,
+        DiaryEvent(id: UUID().uuidString,
                    jobNumber: "AA006",
                    client: "Client006",
                    address: "6 Adelaide Street, Rossendale, BB48PW",
@@ -130,7 +130,7 @@ struct Datum {
                    engineerInstructions: nil,
                    jobPack: nil),
         
-        DiaryEvent(ID: UUID().uuidString,
+        DiaryEvent(id: UUID().uuidString,
                    jobNumber: "AA007",
                    client: "Client007",
                    address: "7 Adelaide Street, Rossendale, BB48PW",
@@ -150,7 +150,7 @@ struct Datum {
                    engineerInstructions: nil,
                    jobPack: nil),
         
-        DiaryEvent(ID: UUID().uuidString,
+        DiaryEvent(id: UUID().uuidString,
                    jobNumber: "AA008",
                    client: "Client008",
                    address: "8 Adelaide Street, Rossendale, BB48PW",
@@ -170,7 +170,7 @@ struct Datum {
                    engineerInstructions: nil,
                    jobPack: nil),
         
-        DiaryEvent(ID: UUID().uuidString,
+        DiaryEvent(id: UUID().uuidString,
                    jobNumber: "AA009",
                    client: "Client009",
                    address: "9 Adelaide Street, Rossendale, BB48PW",
@@ -190,7 +190,7 @@ struct Datum {
                    engineerInstructions: nil,
                    jobPack: nil),
         
-        DiaryEvent(ID: UUID().uuidString,
+        DiaryEvent(id: UUID().uuidString,
                    jobNumber: "AA010",
                    client: "Client010",
                    address: "10 Adelaide Street, Rossendale, BB48PW",
@@ -210,7 +210,7 @@ struct Datum {
                    engineerInstructions: nil,
                    jobPack: nil),
         
-        DiaryEvent(ID: UUID().uuidString,
+        DiaryEvent(id: UUID().uuidString,
                    jobNumber: "AA011",
                    client: "Client011",
                    address: "11 Adelaide Street, Rossendale, BB48PW",
@@ -230,7 +230,7 @@ struct Datum {
                    engineerInstructions: nil,
                    jobPack: nil),
         
-        DiaryEvent(ID: UUID().uuidString,
+        DiaryEvent(id: UUID().uuidString,
                    jobNumber: "AA012",
                    client: "Client012",
                    address: "12 Adelaide Street, Rossendale, BB48PW",
@@ -250,7 +250,7 @@ struct Datum {
                    engineerInstructions: nil,
                    jobPack: nil),
         
-        DiaryEvent(ID: UUID().uuidString,
+        DiaryEvent(id: UUID().uuidString,
                    jobNumber: "AA013",
                    client: "Client013",
                    address: "13 Adelaide Street, Rossendale, BB48PW",
@@ -270,7 +270,7 @@ struct Datum {
                    engineerInstructions: nil,
                    jobPack: nil),
         
-        DiaryEvent(ID: UUID().uuidString,
+        DiaryEvent(id: UUID().uuidString,
                    jobNumber: "AA014",
                    client: "Client014",
                    address: "14 Adelaide Street, Rossendale, BB48PW",

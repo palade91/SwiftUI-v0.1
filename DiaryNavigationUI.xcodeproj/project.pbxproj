@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD0D6BED242CB57F003A787D /* NavigationConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0D6BEC242CB57F003A787D /* NavigationConfigurator.swift */; };
 		ADA7D654242CA7E700F3A506 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA7D653242CA7E700F3A506 /* AppDelegate.swift */; };
 		ADA7D656242CA7E700F3A506 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA7D655242CA7E700F3A506 /* SceneDelegate.swift */; };
 		ADA7D658242CA7E700F3A506 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA7D657242CA7E700F3A506 /* ContentView.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AD0D6BEC242CB57F003A787D /* NavigationConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationConfigurator.swift; sourceTree = "<group>"; };
 		ADA7D650242CA7E700F3A506 /* DiaryNavigationUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiaryNavigationUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADA7D653242CA7E700F3A506 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADA7D655242CA7E700F3A506 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 				ADA7D66B242CA93800F3A506 /* Model */,
 				ADA7D66E242CACEC00F3A506 /* View */,
 				ADA7D66D242CA95800F3A506 /* TestData */,
+				AD0D6BEC242CB57F003A787D /* NavigationConfigurator.swift */,
 				ADA7D659242CA7EA00F3A506 /* Assets.xcassets */,
 				ADA7D65E242CA7EA00F3A506 /* LaunchScreen.storyboard */,
 				ADA7D661242CA7EA00F3A506 /* Info.plist */,
@@ -188,6 +191,7 @@
 				ADA7D66A242CA93300F3A506 /* DiaryEvent.swift in Sources */,
 				ADA7D668242CA90000F3A506 /* DevelopmentData.swift in Sources */,
 				ADA7D656242CA7E700F3A506 /* SceneDelegate.swift in Sources */,
+				AD0D6BED242CB57F003A787D /* NavigationConfigurator.swift in Sources */,
 				ADA7D658242CA7E700F3A506 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
