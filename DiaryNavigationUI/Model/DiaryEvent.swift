@@ -45,16 +45,15 @@ struct DiaryEvent: Codable {
         }
     }
     
-    var getDate:                Date? {
+    var day: String? {
         get {
-            guard let date = date else { return nil }
-            let dateFormatterGet = DateFormatter()
-            dateFormatterGet.dateFormat = "yyyy-MM-dd"
-            
-            let dateFormatterSet = DateFormatter()
-            dateFormatterSet.dateFormat = "dd.MM.yyy"
-            
-            return dateFormatterGet.date(from: date)
+            return String(formatedDate?.prefix(2) ?? "00")
+        }
+    }
+    
+    var monthYear: String? {
+        get {
+            return String(formatedDate?.suffix(7) ?? "00.0000")
         }
     }
     
@@ -134,6 +133,28 @@ struct DiaryEvent: Codable {
             case url =          "url"
         }
     }
+    
+    #if DEBUG
+    static let example = DiaryEvent(id: UUID().uuidString,
+                                    jobNumber: "AA001",
+                                    client: "Client001",
+                                    address: "1 Adelaide Street, Rossendale, BB48PW",
+                                    notes: nil,
+                                    date: "2020-03-27",
+                                    clientContactName: nil,
+                                    clientContactPhone: nil,
+                                    surveyReason: nil,
+                                    siteContactName: nil,
+                                    siteContactPhone: nil,
+                                    whereToSurvey: nil,
+                                    siteSpecific: nil,
+                                    whatToSurvey: nil,
+                                    cleaningRequired: nil,
+                                    measurementsRequired: nil,
+                                    clientInstructions: nil,
+                                    engineerInstructions: nil,
+                                    jobPack: nil)
+    #endif
 }
 
 
