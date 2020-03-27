@@ -41,8 +41,11 @@ struct ContentView: View {
                 nc.navigationBar.barTintColor = UIColor.red
                 nc.navigationBar.titleTextAttributes = [.foregroundColor : UIColor.white]
             })
+            
+            .background(Color.black.opacity(0.1))
         }
         .navigationViewStyle(StackNavigationViewStyle())
+        
     }
 }
 

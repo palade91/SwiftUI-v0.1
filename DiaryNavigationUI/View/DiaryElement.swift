@@ -20,18 +20,25 @@ struct DiaryElement: View {
     
     var body: some View {
         
-        VStack(alignment: .center, spacing: 20) {
+        VStack(alignment: .center, spacing: 15) {
             
             HStack {
                 Text(event.jobNumber)
-                    .font(.system(size: 30))
+                    .font(.largeTitle)
                     .fontWeight(.bold)
+                    
                 
                 Spacer()
                 
                 Text(event.formatedDate ?? "")
-                    .font(.headline)
+                    .font(.body)
+                    .fontWeight(.medium)
             }
+            .padding(EdgeInsets(top: 10, leading: 15, bottom: 10, trailing: 15))
+            .background(Color.white)
+            .cornerRadius(4)
+            .shadow(color: Color.black.opacity(0.5), radius: 2, x: 0, y: 0)
+            
             
             ForEach(0 ..< infos.count) { index in
                 Text(self.infos[index])
@@ -41,7 +48,6 @@ struct DiaryElement: View {
                     .foregroundColor(Color.white)
                     .shadow(color: Color.black.opacity(0.5), radius: 2, x: 0, y: 0)
             }
-            
             
             Spacer()
         }
