@@ -14,35 +14,43 @@ struct DiaryElement: View {
     
     var event: DiaryEvent
     
+    var infos: [String] {
+        return [event.client, event.address, event.clientContactName!, event.clientContactPhone!]
+    }
+    
     var body: some View {
         
-        VStack(alignment: .leading, spacing: 10) {
-            Text(event.jobNumber)
-                .font(.system(size: 30))
-                .fontWeight(.bold)
+        VStack(alignment: .center, spacing: 20) {
             
-            Text(event.formatedDate ?? "")
-                .font(.headline)
+            HStack {
+                Text(event.jobNumber)
+                    .font(.system(size: 30))
+                    .fontWeight(.bold)
+                
+                Spacer()
+                
+                Text(event.formatedDate ?? "")
+                    .font(.headline)
+            }
             
-            Text(event.client)
-            
-            Text(event.address)
-            
-            
-            
-            
+            ForEach(0 ..< infos.count) { index in
+                Text(self.infos[index])
+                    .padding(EdgeInsets(top: 5, leading: 10, bottom: 5, trailing: 10))
+                    .background(Color.red)
+                    .cornerRadius(4)
+                    .foregroundColor(Color.white)
+                    .shadow(color: Color.black.opacity(0.5), radius: 2, x: 0, y: 0)
+            }
             
             
             Spacer()
         }
-    .padding()
-        
-        
-        
+        .padding()
         
         
         
     }
+    
 }
 
 struct DiaryElement_Previews: PreviewProvider {
